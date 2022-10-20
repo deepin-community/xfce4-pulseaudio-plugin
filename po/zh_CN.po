@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# SamHX <samzh@outlook.com>, 2018
+# SamHX <samzh@outlook.com>, 2017
+# Cally Mal <zhouxiaobo.500@gmail.com>, 2017
+# 玉堂白鹤 <yjwork@qq.com>, 2015,2017-2018
+# Mingcong Bai <jeffbai@aosc.xyz>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-25 18:32+0100\n"
+"PO-Revision-Date: 2018-03-13 04:17+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/xfce/xfce-panel-plugins/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../panel-plugin/pulseaudio.desktop.in.in.h:1
+msgid "PulseAudio Plugin"
+msgstr "PulseAudio 插件"
+
+#: ../panel-plugin/pulseaudio.desktop.in.in.h:2
+#: ../panel-plugin/pulseaudio-plugin.c:241
+msgid "Adjust the audio volume of the PulseAudio sound system"
+msgstr "调节 PulseAudio 声音系统的音量"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:1
+msgid "PulseAudio Panel Plugin"
+msgstr "PulseAudio 面板插件"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:2
+msgid "Enable keyboard _shortcuts for volume control"
+msgstr "启用音量控制快捷键 (_S)"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:3
+msgid ""
+"Enables volume control using multimedia keys. Make sure no other application"
+" that listens to these keys (e.g. xfce4-volumed) is running in the "
+"background."
+msgstr "提供使用多媒体键控制音量的功能。请确定后台没有其他正在运行中的监视这些按键的应用（比如 xfce4-volumed）。"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:4
+msgid "Show _notifications when volume changes"
+msgstr "音量变化时显示通知 (_N)"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:5
+msgid "Enables on-screen volume notifications."
+msgstr "在屏幕上显示音量提示"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:6
+msgid "Behaviour"
+msgstr "行为"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:7
+msgid "Audio _Mixer"
+msgstr "混音器 (_M)"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:8
+msgid ""
+"Audio mixer command that can be executed from the context menu, e.g. "
+"\"pavucontrol\", \"unity-control-center sound\"."
+msgstr "可从菜单中执行的混音器命令，如 \"pavucontrol\" 和 \"unity-control-center sound\"。"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:9
+msgid "_Run Audio Mixer..."
+msgstr "运行混音器 (_R) ..."
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:10
+msgid "Sound Settings"
+msgstr "声音设置"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:11
+msgid "General"
+msgstr "一般"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:12
+msgid "Control Playback of Media Players"
+msgstr "控制媒体播放器回放"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:13
+msgid "Enable multimedia keys for playback control"
+msgstr "为回放控制启用多媒体按键"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:14
+msgid "Enable experimental window focus support"
+msgstr "启用实验性的窗口焦点支持"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:15
+msgid "Title"
+msgstr "标题"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:16
+msgid "Hidden"
+msgstr "隐藏"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:17
+msgid "Clear Known Items"
+msgstr "清除已知项目"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:18
+msgid "Please restart your panel for additional players to be displayed."
+msgstr "请重启面板以便显示外加播放器。"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:19
+msgid "Known Media Players"
+msgstr "已知媒体播放器"
+
+#: ../panel-plugin/pulseaudio-dialog.glade.h:20
+msgid "Media Players"
+msgstr "媒体播放器"
+
+#: ../panel-plugin/pulseaudio-plugin.c:243
+msgid "Copyright © 2014-2017 Andrzej Radecki et al.\n"
+msgstr "版权所有  © 2014-2017 Andrzej Radecki et al.\n"
+
+#: ../panel-plugin/pulseaudio-dialog.c:139
+#: ../panel-plugin/pulseaudio-menu.c:264
+#, c-format
+msgid ""
+"<big><b>Failed to execute command \"%s\".</b></big>\n"
+"\n"
+"%s"
+msgstr "<big><b>运行命令 \"%s\" 失败。</b></big>\n\n%s"
+
+#: ../panel-plugin/pulseaudio-dialog.c:142
+#: ../panel-plugin/pulseaudio-menu.c:267
+msgid "Error"
+msgstr "错误"
+
+#: ../panel-plugin/pulseaudio-button.c:333
+#: ../panel-plugin/pulseaudio-notify.c:199
+#, c-format
+msgid "Not connected to the PulseAudio server"
+msgstr "未连接到 PulseAudio 服务"
+
+#: ../panel-plugin/pulseaudio-button.c:335
+#, c-format
+msgid "Volume %d%% (muted)"
+msgstr "%d%% 音量（静音）"
+
+#: ../panel-plugin/pulseaudio-button.c:337
+#, c-format
+msgid "Volume %d%%"
+msgstr "%d%% 音量"
+
+#: ../panel-plugin/pulseaudio-menu.c:501
+msgid "Output"
+msgstr "输出"
+
+#: ../panel-plugin/pulseaudio-menu.c:540
+msgid "Input"
+msgstr "输入"
+
+#: ../panel-plugin/pulseaudio-menu.c:628
+msgid "Choose Playlist"
+msgstr "选择播放列表"
+
+#. Audio mixers
+#: ../panel-plugin/pulseaudio-menu.c:665
+msgid "_Audio mixer..."
+msgstr "混音器 (_A) ..."
+
+#: ../panel-plugin/pulseaudio-notify.c:201
+#, c-format
+msgid "Volume %d%c (muted)"
+msgstr "%d%c 音量（静音）"
+
+#: ../panel-plugin/pulseaudio-notify.c:203
+#, c-format
+msgid "Volume %d%c"
+msgstr "%d%c 音量"
+
+#: ../panel-plugin/mprismenuitem.c:373 ../panel-plugin/mprismenuitem.c:446
+#: ../panel-plugin/mprismenuitem.c:822
+msgid "Not currently playing"
+msgstr "当前没有播放"

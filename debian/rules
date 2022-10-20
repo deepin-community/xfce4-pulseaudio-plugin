@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+export DEB_BUILD_MAINT_OPTIONS  = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed -Wl,-O1 -Wl,-z,defs
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
+		--enable-keybinder \
+		--enable-libnotify \
+		--enable-wnck
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/xfce4-pulseaudio-plugin -name '*.la' -delete
+
+override_dh_makeshlibs:
+	dh_makeshlibs -X debian/xfce4-pulseaudio-plugin/usr/lib/$(DEB_HOST_MULTIARCH)/xfce4/panel/plugins/lib*-plugin.so

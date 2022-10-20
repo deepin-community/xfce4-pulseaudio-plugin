@@ -1,0 +1,37 @@
+Source: xfce4-pulseaudio-plugin
+Section: xfce
+Priority: optional
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>,
+           Unit 193 <unit193@ubuntu.com>,
+           Sean Davis <smd.seandavis@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+               intltool,
+               libexo-2-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libwnck-3-dev,
+               libkeybinder-3.0-dev,
+               libnotify-dev,
+               libpulse-dev,
+               libxfce4panel-2.0-dev,
+               libxfce4ui-2-dev,
+               libxfce4util-dev,
+               libxfconf-0-dev,
+               xfce4-dev-tools
+Rules-Requires-Root: no
+Standards-Version: 4.5.0
+Homepage: https://docs.xfce.org/panel-plugins/xfce4-pulseaudio-plugin
+Vcs-Browser: https://salsa.debian.org/xfce-team/goodies/xfce4-pulseaudio-plugin
+Vcs-Git: https://salsa.debian.org/xfce-team/goodies/xfce4-pulseaudio-plugin.git
+
+Package: xfce4-pulseaudio-plugin
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: pavucontrol, pulseaudio
+Description: Xfce4 panel plugin to control pulseaudio
+ Xfce4 panel plugin icon to control Pulseaudio. You can use this applet to
+ control your Pulseaudio volume levels with the media keys or using the
+ scrollwheel. You can also open a Pulseaudio mixer via the plugin.

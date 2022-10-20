@@ -1,0 +1,143 @@
+xfce4-pulseaudio-plugin (0.4.3-1) unstable; urgency=medium
+
+  * d/watch:
+    - Update for upstream's move to mirrorbit.
+    - Use uscan special strings.
+  * New upstream version 0.4.3
+  * d/control:
+    - Update Build-Depend, libexo-1-dev → libexo-2-dev.
+    - Drop libdbus-glib-1-dev from Build-Depends.
+    - Bump DH compat to 12.
+    - Update homepage, goodies.xfce → docs.xfce.
+    - R³: no.
+  * Update Standards-Version to 4.5.0.
+
+ -- Unit 193 <unit193@ubuntu.com>  Fri, 03 Apr 2020 00:00:25 -0400
+
+xfce4-pulseaudio-plugin (0.4.2-1) unstable; urgency=medium
+
+  * New upstream version 0.4.2
+  * d/compat, d/control:
+    - Drop d/compat in favor of debhelper-compat, bump to 11.
+  * d/control: Drop Build-Depends on autoconf, automake, and libtool.
+  * d/control, d/copyright: Use https where possible.
+  * d/control, d/rules: Enable wnck support.
+  * d/copyright: Update attribution.
+  * d/rules:
+    - Drop manual autoreconf and --disable-silent-rules as they are default.
+    - Drop dh_installchangelogs override.
+  * Remove trailing whitespace from previous changelog entries.
+  * Update Standards-Version to 4.4.0.
+
+ -- Unit 193 <unit193@ubuntu.com>  Fri, 23 Aug 2019 02:50:21 -0400
+
+xfce4-pulseaudio-plugin (0.4.1-1) unstable; urgency=medium
+
+  * New upstream version 0.4.1
+  * d/rules: fix NOCONFIGURE envvar case
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 06 May 2018 15:41:36 +0200
+
+xfce4-pulseaudio-plugin (0.4.0-1) unstable; urgency=medium
+
+  * New upstream version 0.4.0
+  * bump compat to 10, update debhelper build-dep accordingly
+  * d/rules: drop --parallel since dh 10 will do it for us
+  * d/rules: run xdt-autogen with autoreconf
+  * Upload to unstable.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 27 Mar 2018 12:03:43 +0200
+
+xfce4-pulseaudio-plugin (0.3.5-1) experimental; urgency=medium
+
+  * Moved the package to git on salsa.debian.org
+  * Updated the maintainer address to debian-xfce@lists.debian.org
+  * New upstream version 0.3.5
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 09 Mar 2018 17:33:02 +0100
+
+xfce4-pulseaudio-plugin (0.3.4-1) experimental; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    - update standards version to 4.1.2.
+  * d/watch:
+    - Use https now that it is available.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 18 Dec 2017 20:45:19 +0100
+
+xfce4-pulseaudio-plugin (0.3.2-1) experimental; urgency=medium
+
+  [ Unit 193 ]
+  * New upstream development release.
+
+  [ Yves-Alexis Perez ]
+  * debian/rules:
+    - drop autotools-dev dh addon, now covered by recent debhelper.
+    - use parallel build
+  * debian/control:
+    - drop build-dep on autotools-dev
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Nov 2017 16:19:41 +0100
+
+xfce4-pulseaudio-plugin (0.3.1-1) experimental; urgency=medium
+
+  [ Unit 193 ]
+  * New upstream development release.
+  * Update Standards-Version to 4.1.1.
+  * d/control:
+    - Update homepage as defined in the plugin.
+    - Use https where possible.
+  * d/copyright:
+    - Update copyright information, adding authors and updating years.
+    - Use https where possible.
+  * d/rules:
+    - Drop unneeded appended flags from CFLAGS.
+    - Drop --disable-silent-rules as it is default in debhelper now.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - add build-dep on libdbus-glib-1-dev.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 30 Sep 2017 15:23:18 +0200
+
+xfce4-pulseaudio-plugin (0.2.5-1) unstable; urgency=medium
+
+  [ Unit 193 ]
+  * New upstream release.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 4.0.0.
+  * run wrap-and-sort.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 20 Jun 2017 08:09:24 +0200
+
+xfce4-pulseaudio-plugin (0.2.4-2) unstable; urgency=medium
+
+  * debian/control:
+    - add recommends on pulseaudio.                             closes: #853084
+    - update standards version to 3.9.8.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 30 Jan 2017 11:50:53 +0100
+
+xfce4-pulseaudio-plugin (0.2.4-1) unstable; urgency=medium
+
+  [ Unit 193 ]
+  * New upstream release.
+  * d/control: Canonicalize VCS-* fields.
+
+  [ Yves-Alexis Perez ]
+  * debian/rules:
+    - explicitly enable notify and keybinder.
+  * debian/control:
+    - add build-dep on libnotify-dev
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 02 Nov 2015 14:02:53 +0100
+
+xfce4-pulseaudio-plugin (0.2.3-1) unstable; urgency=medium
+
+  [ Unit 193 ]
+  * Initial release.                                             closes: #781014
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Sep 2015 11:34:01 +0200

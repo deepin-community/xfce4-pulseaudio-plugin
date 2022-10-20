@@ -1,0 +1,208 @@
+0.4.3
+=====
+- Build now requires exo-2 0.11 or newer
+- Fixed various memory leaks and warnings
+- Removed unused dbus-glib include (Xfce #15343)
+- Replaced g_type_class_add_private deprecations
+- Updated copyright years
+- Updated URLs from goodies.x.o to docs.x.o (Xfce #16173)
+- MPRIS: Added support for filename icons (Xfce #14329)
+- MPRIS: Added support for single-string variants on xesam:artist
+- MPRIS: Added support for the DesktopEntry property (Xfce #14412)
+- MPRIS: Added support for the plasma-browser-integration plugin (Xfce #15487)
+- MPRIS: Added title/artist conditioning from the track title
+- Preferences: Fixed icon rendering known players
+- Translation Updates:
+  Albanian, Belarusian, Chinese (Taiwan), Galician, Interlingue, Slovenian
+
+0.4.2
+=====
+- Preferences: Improve spacing
+- Translation Updates:
+  Basque, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan), Czech,
+  Danish, English (Australia), Finnish, French, Galician, German, Hebrew,
+  Hungarian, Icelandic, Indonesian, Irish, Italian, Kazakh, Korean,
+  Lithuanian, Norwegian Bokmål, Occitan (post 1500), Polish, Portuguese,
+  Portuguese (Brazil), Slovak, Slovenian, Thai, Ukrainian
+
+0.4.1
+=====
+
+Stable Translations Release.
+- Translation Updates: English (Australia), Greek, Italian, Japanese,
+  Ukrainian
+
+0.4.0
+=====
+
+Stable Release!
+- Preferences: Use correct player names and icons in the media player section
+- Translation Updates: Catalan, Chinese (China), Croatian, French, Hebrew,
+  Italian, Kazakh, Malay, Norwegian Bokmål, Portuguese, Portuguese (Brazil),
+  Serbian, Spanish, Swedish, Turkish
+
+0.3.5
+=====
+
+- New Feature: Move streams on default output device change (Xfce #14157)
+  - Prior to this update, when a new output device was selected, any existing
+    streams had to be moved using pavucontrol. This change automatically
+    moves any active output streams to the newly selected device.
+- New Feature: Management of known MPRIS2 players (Xfce #13903)
+  - Known players can now be cleared or selectively hidden from the menu.
+- Bug Fixes:
+  - Wait for the pulseaudio volume sink to be connected to get the current
+    volume state at startup (Xfce #14071, #13677)
+  - MPRIS2: stale data retained after Metadata signal (Xfce #14068)
+- Translation Updates: Catalan, Chinese (China), Croatian, Czech, Danish,
+  Dutch, French, German, Greek, Irish, Japanese, Kazakh, Lithuanian, Malay,
+  Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Spanish,
+  Turkish, Ukrainian
+
+0.3.4
+=====
+
+- New Feature: MPRIS Playlist Support
+  - Implements the org.mpris.MediaPlayer2.Playlists specification.
+  - The most recent 5 playlists are displayed (if supported by the player).
+- New Feature: Experimental libwnck Support
+  - Some media players do not support the Raise method. This optional
+    feature attempts to raise windows by their title.
+- General:
+  - Unexpected error messages sent via DBUS are now handled gracefully.
+  - Numerous memory leaks patched.
+- Translation Updates: Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+  French, German, Hebrew, Japanese, Korean, Lithuanian, Polish, Russian,
+  Slovak, Spanish, Swedish, Thai
+
+0.3.3
+=====
+
+- New Feature: Multimedia Key Support
+  - Integrates with the recently added MPRIS2 support
+  - Extends multimedia key support to all MPRIS2-enabled media players
+- General:
+  - Simplified device menus
+  - Improved default volume scale increments (steps of 5, max of 150)
+  - More code cleanup, dropping unused IDO functions
+- Bug Fixes:
+  - Xfce 13677: Show volume change notifications when changed with
+    another application
+  - Xfce 13908: Change default device when changed with another application
+  - Xfce 13961: Fix flag in g_bus_watch_name_on_connection() method
+  - Xfce 13998: Fix plugin size calculation with multiple rows
+- Translation Updates: Croatian, Czech, Danish, Dutch, French, German,
+  Indonesian, Kazakh, Korean, Norwegian Bokmål, Polish, Ukrainian
+
+0.3.2
+=====
+
+- General:
+  - Replace deprecated notify_notification_set_hint calls
+- Bug Fixes:
+  - Xfce 13889: Fix build with clang (non-void function should return a value
+    [-Wreturn-type])
+  - Xfce 13894: Fix panel icon size with high DPI
+- Translation Updates: Chinese (China), Danish, German, Portuguese (Brazil),
+  Swedish
+
+0.3.1
+=====
+
+- New Feature: Device Management
+  - Switch active audio input and output devices.
+  - Control volume of the currently selected device.
+  - If there are no input or output devices, the menu items are hidden.
+  - This feature does not change the device associated with active streams.
+- General:
+  - Fixed build warnings with gcc-7
+  - Improved code quality with the custom widgets
+  - Improved memory management
+  - Simplified audio volume controls
+- Translation Updates: Bulgarian, Catalan, Czech, Danish, French, Hebrew,
+  Croatian, Korean, Lithuanian, Dutch, Polish, Portuguese, Russian, Slovak,
+  Slovenian, Thai, Turkish, Ukrainian, Chinese (China), Chinese (Taiwan)
+
+0.3.0
+=====
+
+- New Features:
+  - Add audio input volume to plugin menu
+  - Add (optional) MPRIS2 media player controls
+  - Add support for the XF86AudioMicMute key
+  - Update help links to the new docs.xfce.org startpage
+  - Set the transient hint for volume and mic notifications
+- Build requirements updated to Xfce 4.14 minimum:
+  - GTK+ 3.20
+  - GLib 2.42
+- Bug Fixes:
+  - Xfce 13585: Compilation errors with xfce4-panel 4.13
+  - CID 168081: Result is not floating-point
+  - CID 168082: Dereference before null
+  - Fixed large size button
+- General:
+  - Updated credits and copyright notice
+- Translation Updates: Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+  Croatian, Czech, Danish, Dutch, English (Australia), French, Galician,
+  German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Italian, Kazakh,
+  Korean, Lithuanian, Malay, Norwegian Bokmal, Occitan (post 1500),
+  Polish, Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Thai, Turkish, Ukrainian
+
+0.2.5
+=====
+
+- Adapt to a panel API change (4.13+)
+- Update volume on server events such as change of default output device
+- Do not show notifications at start up (bug #12313)
+- Do not issue volume notifications when plugin menu is shown.
+- Fix several issues with translations
+- Translation Updates: Bulgarian, Catalan, Croatian, Czech, Danish, Dutch,
+  English (Australia), French, Galician, German, Greek, Hebrew, Hungarian,
+  Icelandic, Italian, Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmal,
+  Occitan, Polish, Portuguese, Portuguese, Russian, Serbian, Slovak, Spanish,
+  Swedish, Thai, Turkish, Ukrainian
+
+0.2.4
+=====
+
+- Added a configuration option "show-notifications".
+- Reconnect to the PA server when the connection is lost.
+- Fixes to the notification update mechanism.
+
+0.2.3
+=====
+
+- Corrected copyright and author list
+- Added OSD notifications
+- >100% audio volume is now allowed (only when using a volume slider)
+
+0.2.2
+=====
+
+- Fixed crashes & lockups with Gtk+ 3.14
+- Icon fixes
+- Added plugin icon
+- Added required icons to tarball
+
+0.2.1
+=====
+
+Bugfix release for issues with Gtk+-3.14:
+- Incorrect mouse coordinate translation in the volume slider.
+- Crash on menu popup/popdown.
+
+0.2.0
+=====
+
+- Autoconf and automake modernization
+- Make the default mixer command a compile-time option
+- Add menu item for muting the volume
+- Allow execution of the mixer from context menu
+- Replace the button with a toggle button that displays a popup with a scale
+  for adjusting the volume when activated
+
+0.1.0
+=====
+
+- Initial version
